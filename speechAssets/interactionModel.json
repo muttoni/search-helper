@@ -1,0 +1,78 @@
+{
+  "intents": [
+    {
+      "name": "AMAZON.CancelIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.HelpIntent",
+      "samples": []
+    },
+    {
+      "name": "AMAZON.StopIntent",
+      "samples": []
+    },
+    {
+      "name": "ImageSearchIntent",
+      "samples": [
+        "show me pictures of {thing}",
+        "show me some {thing}",
+        "search for pictures of {thing}",
+        "look for pictures of {thing}",
+        "search for pics of {thing}",
+        "search for images of {thing}",
+        "of {thing}",
+        "{thing}"
+      ],
+      "slots": [
+        {
+          "name": "thing",
+          "type": "random_thing",
+          "samples": []
+        }
+      ]
+    },
+    {
+      "name": "TextSearchIntent",
+      "samples": [
+        "search google for {thing}",
+        "search the web for {thing}"
+      ],
+      "slots": [
+        {
+          "name": "thing",
+          "type": "random_thing",
+          "samples": []
+        }
+      ]
+    }
+  ],
+  "types": [
+    {
+      "name": "random_thing",
+      "values": [
+        {
+          "id": null,
+          "name": {
+            "value": "cat",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "new york",
+            "synonyms": []
+          }
+        },
+        {
+          "id": null,
+          "name": {
+            "value": "red fire trucks",
+            "synonyms": []
+          }
+        }
+      ]
+    }
+  ]
+}
